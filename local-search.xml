@@ -5,10 +5,23 @@
   
   <entry>
     <title></title>
-    <link href="/2026/05/01/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%88%90%E5%8A%9F%E7%9A%84vibe%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
-    <url>/2026/05/01/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%88%90%E5%8A%9F%E7%9A%84vibe%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
+    <link href="/2026/05/02/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%88%90%E5%8A%9F%E7%9A%84vibe%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+    <url>/2026/05/02/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%88%90%E5%8A%9F%E7%9A%84vibe%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
     
     <content type="html"><![CDATA[<p>通过私有库和公开库的链接，在私有库内加入Github密钥和Hexo编译指令，并通过网页和私有库联系，实现博客提交的自动化了</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>111</title>
+    <link href="/2026/05/02/111/"/>
+    <url>/2026/05/02/111/</url>
+    
+    <content type="html"><![CDATA[<p>测试标题bug是否修复</p>]]></content>
     
     
     
