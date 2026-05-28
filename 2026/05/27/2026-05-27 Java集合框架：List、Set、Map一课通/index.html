@@ -19,14 +19,14 @@
   <meta name="author" content="北街">
   <meta name="keywords" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
   
-    <meta name="description" content="上午gap了，睡了放纵觉，以及推进了玩的游戏的进度。 下午🤔，好像没有干实质的事情，了解了一下开源项目的情况，找了下good-first-issue，然后就一直在，玩？🤔简而言之应该是没干什么实事的晚上就简单应付完高数，后面投身群星了（）群星真好玩😋">
+    <meta name="description" content="背景借书系统升级——LibraryService 增加 List&lt;Item&gt; items 书架，用集合框架统一管理所有馆藏。 List：有序可重的书架1234List&lt;Item&gt; items &#x3D; new ArrayList&lt;&gt;();items.add(book1);items.add(magazine1);System.out.println(items.siz">
 <meta property="og:type" content="article">
-<meta property="og:title" content="每晚总结其三——周末学习情况">
-<meta property="og:url" content="http://example.com/2026/05/10/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E5%85%B6%E4%B8%89%E2%80%94%E2%80%94%E5%91%A8%E6%9C%AB%E5%AD%A6%E4%B9%A0%E6%83%85%E5%86%B5/index.html">
+<meta property="og:title" content="2026-05-27 Java集合框架：List、Set、Map一课通">
+<meta property="og:url" content="http://example.com/2026/05/27/2026-05-27%20Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%EF%BC%9AList%E3%80%81Set%E3%80%81Map%E4%B8%80%E8%AF%BE%E9%80%9A/index.html">
 <meta property="og:site_name" content="北街的秘密基地">
-<meta property="og:description" content="上午gap了，睡了放纵觉，以及推进了玩的游戏的进度。 下午🤔，好像没有干实质的事情，了解了一下开源项目的情况，找了下good-first-issue，然后就一直在，玩？🤔简而言之应该是没干什么实事的晚上就简单应付完高数，后面投身群星了（）群星真好玩😋">
+<meta property="og:description" content="背景借书系统升级——LibraryService 增加 List&lt;Item&gt; items 书架，用集合框架统一管理所有馆藏。 List：有序可重的书架1234List&lt;Item&gt; items &#x3D; new ArrayList&lt;&gt;();items.add(book1);items.add(magazine1);System.out.println(items.siz">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-10T15:59:00.000Z">
+<meta property="article:published_time" content="2026-05-27T14:00:00.000Z">
 <meta property="article:modified_time" content="2026-05-28T15:35:53.506Z">
 <meta property="article:author" content="北街">
 <meta property="article:tag" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
@@ -34,7 +34,7 @@
   
   
   
-  <title>每晚总结其三——周末学习情况 - 北街的秘密基地</title>
+  <title>2026-05-27 Java集合框架：List、Set、Map一课通 - 北街的秘密基地</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -293,7 +293,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="每晚总结其三——周末学习情况"></span>
+            <span id="subtitle" data-typed-text="2026-05-27 Java集合框架：List、Set、Map一课通"></span>
           
         </div>
 
@@ -304,8 +304,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-05-10 23:59" pubdate>
-          2026年5月10日 晚上
+        <time datetime="2026-05-27 22:00" pubdate>
+          2026年5月27日 晚上
         </time>
       </span>
     
@@ -316,7 +316,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          127 字
+          737 字
         
       </span>
     
@@ -327,7 +327,7 @@
         
         
         
-          2 分钟
+          7 分钟
         
       </span>
     
@@ -366,13 +366,61 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">每晚总结其三——周末学习情况</h1>
+            <h1 id="seo-header">2026-05-27 Java集合框架：List、Set、Map一课通</h1>
             
             
               <div class="markdown-body">
                 
-                <p>上午gap了，睡了放纵觉，以及推进了玩的游戏的进度。</p>
-<p>下午🤔，好像没有干实质的事情，了解了一下开源项目的情况，找了下good-first-issue，然后就一直在，玩？🤔简而言之应该是没干什么实事的<br>晚上就简单应付完高数，后面投身群星了（）群星真好玩😋</p>
+                <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>借书系统升级——LibraryService 增加 <code>List&lt;Item&gt; items</code> 书架，用集合框架统一管理所有馆藏。</p>
+<h2 id="List：有序可重的书架"><a href="#List：有序可重的书架" class="headerlink" title="List：有序可重的书架"></a>List：有序可重的书架</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs java">List&lt;Item&gt; items = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();<br>items.add(book1);<br>items.add(magazine1);<br>System.out.println(items.size());<br></code></pre></td></tr></table></figure>
+
+<p>有索引、按插入顺序排列、允许重复。</p>
+<p><strong>for-each + break vs forEach + lambda</strong>：需要找到目标就早退时用 for-each，对所有元素统一操作时用 forEach。</p>
+<h2 id="Set：自动去重"><a href="#Set：自动去重" class="headerlink" title="Set：自动去重"></a>Set：自动去重</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs java">Set&lt;String&gt; set = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashSet</span>&lt;&gt;();<br>set.add(<span class="hljs-string">&quot;Java&quot;</span>);<br>set.add(<span class="hljs-string">&quot;Java&quot;</span>);<br>System.out.println(set.size());<br></code></pre></td></tr></table></figure>
+
+<p>无索引、不允许重复。去重依赖于 <code>equals()</code> 和 <code>hashCode()</code>：</p>
+<ul>
+<li>String 字面量在常量池，相同内容的两个变量指向同一对象 → Set 正确去重</li>
+<li><code>new Book()</code> 在堆上每次创建新对象，未重写 <code>equals()</code> 前按地址比较 → 同名同作者的两个 Book 都能进 Set</li>
+</ul>
+<h2 id="Map：键值对，靠-key-一步定位"><a href="#Map：键值对，靠-key-一步定位" class="headerlink" title="Map：键值对，靠 key 一步定位"></a>Map：键值对，靠 key 一步定位</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java">Map&lt;Integer, Item&gt; map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashMap</span>&lt;&gt;();<br>map.put(<span class="hljs-number">1</span>, book1);<br><span class="hljs-type">Item</span> <span class="hljs-variable">item</span> <span class="hljs-operator">=</span> map.get(<span class="hljs-number">1</span>);<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>键不可重复，后续 put 相同 key 会覆盖旧值</li>
+<li>适合用唯一标识快速查找对象的场景</li>
+</ul>
+<h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><table>
+<thead>
+<tr>
+<th>集合</th>
+<th>有序</th>
+<th>可重复</th>
+<th>有索引</th>
+<th>场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>List</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>按序存取</td>
+</tr>
+<tr>
+<td>Set</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>去重</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>❌</td>
+<td>key不可重</td>
+<td>❌</td>
+<td>按键查找</td>
+</tr>
+</tbody></table>
 
                 
               </div>
@@ -391,7 +439,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93/" class="category-chain-item">每晚总结</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -411,8 +459,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>每晚总结其三——周末学习情况</div>
-      <div>http://example.com/2026/05/10/每晚总结其三——周末学习情况/</div>
+      <div>2026-05-27 Java集合框架：List、Set、Map一课通</div>
+      <div>http://example.com/2026/05/27/2026-05-27 Java集合框架：List、Set、Map一课通/</div>
     </div>
     <div class="license-meta">
       
@@ -424,7 +472,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年5月10日</div>
+          <div>2026年5月27日</div>
         </div>
       
       
@@ -456,18 +504,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/05/11/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E7%AC%AC%E5%9B%9B%E7%AF%87-%E4%BD%BF%E7%94%A8cc/" title="每晚总结之第四篇-使用cc">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">每晚总结之第四篇-使用cc</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2026/05/08/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E7%AC%AC%E4%BA%8C%E7%AF%87%E2%80%93java%E5%A4%8D%E4%B9%A0%E5%85%B6%E4%BA%8C_/" title="每晚总结第二篇–java复习其二_">
-                        <span class="hidden-mobile">每晚总结第二篇–java复习其二_</span>
+                      <a href="/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/" title="每晚总结之补上">
+                        <span class="hidden-mobile">每晚总结之补上</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
