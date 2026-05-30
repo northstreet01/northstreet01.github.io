@@ -80,6 +80,25 @@
   
   
   <entry>
+    <title>2026-05-21 Java�������ࣺ���췽����this��super�ͷ�װ</title>
+    <link href="/2026/05/21/2026-05-21%20Java%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%E0%A3%BA%EF%BF%BD%EF%BF%BD%EF%BF%BD%EC%B7%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDthis%EF%BF%BD%EF%BF%BDsuper%EF%BF%BD%CD%B7%EF%BF%BD%D7%B0/"/>
+    <url>/2026/05/21/2026-05-21%20Java%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%E0%A3%BA%EF%BF%BD%EF%BF%BD%EF%BF%BD%EC%B7%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDthis%EF%BF%BD%EF%BF%BDsuper%EF%BF%BD%CD%B7%EF%BF%BD%D7%B0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="���ĸ���"><a href="#���ĸ���" class="headerlink" title="���ĸ���"></a>���ĸ���</h2><p>��4��ǰ��ڣ�Ch9�������ࡣ</p><h3 id="���췽��"><a href="#���췽��" class="headerlink" title="���췽��"></a>���췽��</h3><ul><li>û�з������ͣ�voidҲ��д��</li><li>���ֱ����������</li><li>newʱ�Զ����ã���д����Ĭ���޲ι���</li><li><code>new</code>�������£��ٶ��ϴ�����������ڴ� �ڵ��ù��췽����ʼ��</li></ul><h3 id="this"><a href="#this" class="headerlink" title="this"></a>this</h3><p>ָ����ǰ���󡣱������ұ���˳�򣺾ֲ���ʵ�������ࡣ<code>this.name</code>�����ֲ�����ֱȡʵ��������</p><h3 id="super"><a href="#super" class="headerlink" title="super()"></a>super()</h3><p>��ʽ����ÿ�����췽����һ�У����ø��๹�졣����û���޲ι���ʱ�����ֶ�д<code>super(����)</code>�����췽������<code>super(����)</code>�����๹�죻��ͨ��������<code>super.������()</code>�����෽����</p><h3 id="��װ"><a href="#��װ" class="headerlink" title="��װ"></a>��װ</h3><p>��private�����ֶΣ���public�������š�������ܹ���Controller��Service��DAO����ͬһ�߼���</p><h2 id="������L�ϵ"><a href="#������L�ϵ" class="headerlink" title="������Ĺ�ϵ"></a>������Ĺ�ϵ</h2><ul><li><strong>����</strong>��A�ķ���������һ��B�������ɢ</li><li><strong>�ۺ�</strong>��Aӵ��B��B�ɶ������ڣ�ѧ��?�γ̣�</li><li><strong>���</strong>��Aӵ��B��B����������A����������?��������</li><li><strong>�̳�</strong>��A��B��һ�֣�Dog?Animal����Ch11�</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>ѧϰ�ʼ�</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-05-21 C��Java�������ؼ�����</title>
     <link href="/2026/05/21/2026-05-21%20C%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%BC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
     <url>/2026/05/21/2026-05-21%20C%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%BC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/</url>
