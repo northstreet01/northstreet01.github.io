@@ -61,6 +61,25 @@
   
   
   <entry>
+    <title>2026-05-25 �̳����̬������ϵͳ�������ع�</title>
+    <link href="/2026/05/25/2026-05-25%20%EF%BF%BD%CC%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%B9%EF%BF%BD/"/>
+    <url>/2026/05/25/2026-05-25%20%EF%BF%BD%CC%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%B9%EF%BF%BD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��6�Σ�Ch11�̳����̬�����Լ�д�Ľ���ϵͳ�ϵ��µ�OOP���</p><h2 id="�ع�����"><a href="#�ع�����" class="headerlink" title="�ع�����"></a>�ع�����</h2><p><strong>��һ��</strong>������Item���࣬��Book�Ĺ����ֶ�(name&#x2F;author&#x2F;id&#x2F;holderId)����ȥ����ʼ���󡪡�Item���췽��д���޲�+�Ը�ֵ<code>this.id=id</code>��Book�ƹ�super()ֱ����<code>this.name=name</code>������Ϊ�вι���+<code>super(name,author,id)</code>��</p><p><strong>���ľ���</strong>���̳в�ֻ��ʡ�ظ����롪���Ǹ��ඨ�����������ء�</p><h2 id="��̬"><a href="#��̬" class="headerlink" title="��̬"></a>��̬</h2><p>LibraryService������Book��ΪItem���������߼���Ķ������������ࡣ�½�Magazine���ഫ��ͬһ�׽軹�߼���</p><h2 id="����ת��-vs-����ת��"><a href="#����ת��-vs-����ת��" class="headerlink" title="����ת�� vs ����ת��"></a>����ת�� vs ����ת��</h2><ul><li>����ת�ͣ�<code>Item item = new Book()</code> �� �Զ���ȫ</li><li>����ת�ͣ�<code>Book book = (Book) item</code> �� ����ͨ�������п���ըClassCastException</li></ul><p><strong>����vs����</strong>�����ȱ��������������������Ǳ�ǩ���������ͣ���JVM��һ��֪��������ʲô��ʵ�����ͣ���</p><h2 id="�ؼ����ֱ��"><a href="#�ؼ����ֱ��" class="headerlink" title="�ؼ����ֱ��"></a>�ؼ����ֱ��</h2><p>“��ͬ�ĵ㲻д�빹�췽����д����ͨ����������д”�������챣֤�ṹ��������д������Ϊ������</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ѧϰ�ʼ�</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>每晚总结之补上</title>
     <link href="/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/"/>
     <url>/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/</url>
@@ -71,6 +90,25 @@
     <categories>
       
       <category>每晚总结</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2026-05-22 ����ϵͳ���������һ����������Java��Ŀ</title>
+    <link href="/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/"/>
+    <url>/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/</url>
+    
+    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��5�Σ�Ch10�������˼ά����һ�δ������+����һ��������Javaϵͳ��</p><h2 id="ϵͳ���"><a href="#ϵͳ���" class="headerlink" title="ϵͳ���"></a>ϵͳ���</h2><p>�����ࣺStudent������+ѧ�ţ���Book������&#x2F;����&#x2F;���&#x2F;������ID����LibraryService������&#x2F;����&#x2F;���飩</p><h2 id="�ؼ���ƾ���"><a href="#�ؼ���ƾ���" class="headerlink" title="�ؼ���ƾ���"></a>�ؼ���ƾ���</h2><ol><li><strong>��ϵ�ж�</strong>��Student?Book�Ǿۺϲ�����ϡ���ѧ����ҵ���黹��</li><li><strong>�����ֶ�</strong>��ɾ��boolean isBorrowed������holderId&#x3D;&#x3D;null�жϡ�����һ���ֶ���һ����һ�µĿ���״̬</li><li><strong>ƥ�����</strong>���軹ƥ���”����+����”�Ż�Ϊ”���+ѧ��”˫IDƥ�䡪������ͬ����ͻ</li></ol><h2 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h2><ul><li>borrowBook����ȱ��book����</li><li>Checkbook˫�������﷨����</li><li>����public class��һ���ļ�����Javaһ���ļ�ֻ����һ��public class</li></ul><h2 id="�κ���֤"><a href="#�κ���֤" class="headerlink" title="�κ���֤"></a>�κ���֤</h2><p>����������+һ��ѧ������ͨ�������������������ջ���������˵ڶ���ѧ�������ѽ����ı߽���ԡ���else��֧�ɹ����ء�</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ѧϰ�ʼ�</category>
       
     </categories>
     
