@@ -27,7 +27,7 @@
 <meta property="og:description" content="重构过程在自己写的借书系统上叠继承和多态。 第一步：创建Item父类，抽取公共字段(name&#x2F;author&#x2F;id&#x2F;holderId)。初始错误——Item构造无参+自赋值this.id&#x3D;id，Book绕过super()直接赋值。纠正为有参构造+super(name,author,id)。 核心觉悟：继承不只是省重复代码，是父类定规则，子类遵守。 多态验证Li">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-05-25T14:00:00.000Z">
-<meta property="article:modified_time" content="2026-05-30T09:40:14.421Z">
+<meta property="article:modified_time" content="2026-05-30T09:40:51.559Z">
 <meta property="article:author" content="北街">
 <meta property="article:tag" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
 <meta name="twitter:card" content="summary_large_image">

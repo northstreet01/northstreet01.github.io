@@ -327,25 +327,6 @@
   
   
   <entry>
-    <title>2026-05-21 C��Java�������ؼ�����</title>
-    <link href="/2026/05/21/2026-05-21%20C%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%BC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
-    <url>/2026/05/21/2026-05-21%20C%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%BC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/</url>
-    
-    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��2-3�Ρ����ΪC����֪ʶ��Ⱦ��Java���⡪��switchֻ��int�����������õȶ���C����ϰ�ߡ�����C&#x2F;Java����ר��Ρ�</p><h2 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h2><ol><li><strong>switch</strong>��Cֻ��int �� Java֧��String&#x2F;enum&#x2F;��װ��&#x2F;byte&#x2F;short&#x2F;char</li><li><strong>��������</strong>��C��ָ�� �� Javaȫֵ���ݡ��Ķ����ڲ�(<code>arr[0]=999</code>)���濴�ü��������ñ���(<code>arr=new int[10]</code>)���濴����</li><li><strong>��������</strong>��<code>int arr[]</code> �� Java�Ƽ� <code>int[] arr</code></li><li><strong>String</strong>��C��char[]�ɱ� �� Java String���ɱ�(Immutable)�����ַ���������(String Pool)�Զ�ȥ��</li><li><strong>forѭ��</strong>��Cֻ�д�ͳfor �� Java����for-each����������ֻ��������</li><li><strong>����</strong>��C���㼴�� �� Java��if()ֻ����boolean����ʽ</li></ol><h2 id="�����ջ�"><a href="#�����ջ�" class="headerlink" title="�����ջ�"></a>�����ջ�</h2><p>������Ҫ˳��ʱ���ߣ����ܵ�һ����������ͬһ�����ڲ�ͬʱ�̿����в�ֵͬ��</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>ѧϰ�ʼ�</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2026-05-20 重载、重写与实现：Java OOP三个核心概念辨析</title>
     <link href="/2026/05/20/2026-05-20%20%E9%87%8D%E8%BD%BD%E3%80%81%E9%87%8D%E5%86%99%E4%B8%8E%E5%AE%9E%E7%8E%B0%EF%BC%9AJava%20OOP%E4%B8%89%E4%B8%AA%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/"/>
     <url>/2026/05/20/2026-05-20%20%E9%87%8D%E8%BD%BD%E3%80%81%E9%87%8D%E5%86%99%E4%B8%8E%E5%AE%9E%E7%8E%B0%EF%BC%9AJava%20OOP%E4%B8%89%E4%B8%AA%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/</url>
