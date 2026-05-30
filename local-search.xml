@@ -80,6 +80,25 @@
   
   
   <entry>
+    <title>2026-05-20 ���ء���д��ʵ�֣�Java OOP�������ĸ������</title>
+    <link href="/2026/05/20/2026-05-20%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%A1%EF%BF%BD%EF%BF%BD%EF%BF%BD%D0%B4%EF%BF%BD%EF%BF%BD%CA%B5%EF%BF%BD%D6%A3%EF%BF%BDJava%20OOP%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C4%B8%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+    <url>/2026/05/20/2026-05-20%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%A1%EF%BF%BD%EF%BF%BD%EF%BF%BD%D0%B4%EF%BF%BD%EF%BF%BD%CA%B5%EF%BF%BD%D6%A3%EF%BF%BDJava%20OOP%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C4%B8%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>�ո����ס��߼ҽ�ϵͳ��1�Ρ���λ��ʦͬʱ�ڿΡ����������ӡ�����������ϡ���ǰ����Ϊ�����﷨�������ˣ���׷��֮��������&#x2F;��д&#x2F;ʵ�������������һ���á�</p><h2 id="�����Ա�"><a href="#�����Ա�" class="headerlink" title="�����Ա�"></a>�����Ա�</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// ���أ�Overload������ ͬ����ͬ�Σ�ͬһ������</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Calculator</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">add</span><span class="hljs-params">(<span class="hljs-type">int</span> a, <span class="hljs-type">int</span> b)</span> &#123; <span class="hljs-keyword">return</span> a + b; &#125;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">double</span> <span class="hljs-title function_">add</span><span class="hljs-params">(<span class="hljs-type">double</span> a, <span class="hljs-type">double</span> b)</span> &#123; <span class="hljs-keyword">return</span> a + b; &#125;  <span class="hljs-comment">// ����</span><br>&#125;<br><br><span class="hljs-comment">// ��д��Override������ ���า�Ǹ��෽��</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Animal</span> &#123;<br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">speak</span><span class="hljs-params">()</span> &#123; System.out.println(<span class="hljs-string">&quot;Woof&quot;</span>); &#125;<br>&#125;<br><br><span class="hljs-comment">// ʵ�֣�Implement������ ���ֽӿ���Լ</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Athlete</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Runner</span> &#123;<br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">()</span> &#123; System.out.println(<span class="hljs-string">&quot;running&quot;</span>); &#125;<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h2><table><thead><tr><th>����</th><th>����</th><th>�ؼ���</th></tr></thead><tbody><tr><td>����</td><td>ͬ����ͬ��</td><td>ͬһ����</td></tr><tr><td>��д</td><td>����ĸ�����Ϊ</td><td>extends + @Override</td></tr><tr><td>ʵ��</td><td>���ֽӿ���Լ</td><td>implements</td></tr></tbody></table><h2 id="�����ջ�"><a href="#�����ջ�" class="headerlink" title="�����ջ�"></a>�����ջ�</h2><ul><li><code>void</code> ��������һ�ַ������͡������췽���� void ����д</li><li><code>@Override</code> �� Java 6 ��ʼҲ�����ڽӿ�ʵ��</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>ѧϰ�ʼ�</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>每晚总结之今天真是啥也没干</title>
     <link href="/2026/05/15/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E4%BB%8A%E5%A4%A9%E7%9C%9F%E6%98%AF%E5%95%A5%E4%B9%9F%E6%B2%A1%E5%B9%B2/"/>
     <url>/2026/05/15/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E4%BB%8A%E5%A4%A9%E7%9C%9F%E6%98%AF%E5%95%A5%E4%B9%9F%E6%B2%A1%E5%B9%B2/</url>
