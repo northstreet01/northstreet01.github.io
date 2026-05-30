@@ -19,14 +19,14 @@
   <meta name="author" content="北街">
   <meta name="keywords" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
   
-    <meta name="description" content="测试">
+    <meta name="description" content="背景直接在LibraryService的borrowItem上加异常处理。 空指针防御item&#x3D;null或student&#x3D;null都会NullPointerException。在borrowItem外包裹try-catch。 try-catch-finally三件套1234567try &#123;    &#x2F;&#x2F; 正常逻辑&#125; catch (NullPointerExce">
 <meta property="og:type" content="article">
-<meta property="og:title" content="分类功能测试">
-<meta property="og:url" content="http://example.com/2026/05/03/%E5%88%86%E7%B1%BB%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:title" content="2026-05-26 Java异常处理：try-catch-finally与防御编程">
+<meta property="og:url" content="http://example.com/2026/05/26/2026-05-26%20Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%EF%BC%9Atry-catch-finally%E4%B8%8E%E9%98%B2%E5%BE%A1%E7%BC%96%E7%A8%8B/index.html">
 <meta property="og:site_name" content="北街的秘密基地">
-<meta property="og:description" content="测试">
+<meta property="og:description" content="背景直接在LibraryService的borrowItem上加异常处理。 空指针防御item&#x3D;null或student&#x3D;null都会NullPointerException。在borrowItem外包裹try-catch。 try-catch-finally三件套1234567try &#123;    &#x2F;&#x2F; 正常逻辑&#125; catch (NullPointerExce">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-03T06:30:00.000Z">
+<meta property="article:published_time" content="2026-05-26T08:00:00.000Z">
 <meta property="article:modified_time" content="2026-05-30T09:29:27.724Z">
 <meta property="article:author" content="北街">
 <meta property="article:tag" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
@@ -34,7 +34,7 @@
   
   
   
-  <title>分类功能测试 - 北街的秘密基地</title>
+  <title>2026-05-26 Java异常处理：try-catch-finally与防御编程 - 北街的秘密基地</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -293,7 +293,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="分类功能测试"></span>
+            <span id="subtitle" data-typed-text="2026-05-26 Java异常处理：try-catch-finally与防御编程"></span>
           
         </div>
 
@@ -304,8 +304,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-05-03 14:30" pubdate>
-          2026年5月3日 下午
+        <time datetime="2026-05-26 16:00" pubdate>
+          2026年5月26日 下午
         </time>
       </span>
     
@@ -316,7 +316,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2 字
+          418 字
         
       </span>
     
@@ -327,7 +327,7 @@
         
         
         
-          1 分钟
+          4 分钟
         
       </span>
     
@@ -366,12 +366,20 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">分类功能测试</h1>
+            <h1 id="seo-header">2026-05-26 Java异常处理：try-catch-finally与防御编程</h1>
             
             
               <div class="markdown-body">
                 
-                <p>测试</p>
+                <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>直接在LibraryService的borrowItem上加异常处理。</p>
+<h2 id="空指针防御"><a href="#空指针防御" class="headerlink" title="空指针防御"></a>空指针防御</h2><p>item&#x3D;null或student&#x3D;null都会NullPointerException。在borrowItem外包裹try-catch。</p>
+<h2 id="try-catch-finally三件套"><a href="#try-catch-finally三件套" class="headerlink" title="try-catch-finally三件套"></a>try-catch-finally三件套</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">try</span> &#123;<br>    <span class="hljs-comment">// 正常逻辑</span><br>&#125; <span class="hljs-keyword">catch</span> (NullPointerException e) &#123;<br>    <span class="hljs-comment">// null异常走这里</span><br>&#125; <span class="hljs-keyword">finally</span> &#123;<br>    <span class="hljs-comment">// 不管出不出异常都执行</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="经验总结"><a href="#经验总结" class="headerlink" title="经验总结"></a>经验总结</h2><ul>
+<li>finally空块：浪费了finally永远执行的保证</li>
+<li><code>if(canborrow())&#123;空&#125;else&#123;拒绝&#125;</code>改成了<code>if(!canborrow())&#123;拒绝;return&#125;</code>，消灭空块</li>
+<li>try-catch是兜底抓异常，try-with-resources（第11课）是自动关门</li>
+</ul>
 
                 
               </div>
@@ -390,7 +398,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%B5%8B%E8%AF%95/" class="category-chain-item">测试</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -410,8 +418,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>分类功能测试</div>
-      <div>http://example.com/2026/05/03/分类功能测试/</div>
+      <div>2026-05-26 Java异常处理：try-catch-finally与防御编程</div>
+      <div>http://example.com/2026/05/26/2026-05-26 Java异常处理：try-catch-finally与防御编程/</div>
     </div>
     <div class="license-meta">
       
@@ -423,7 +431,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年5月3日</div>
+          <div>2026年5月26日</div>
         </div>
       
       
@@ -455,9 +463,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/05/03/111/" title="111">
+                      <a href="/2026/05/26/2026-05-26%20OOP%EF%BF%BD%DB%BA%CF%BC%EF%BF%BD%EF%BF%BD%E9%A3%BA%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDNewspaper%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%DA%B7%EF%BF%BD/" title="2026-05-26 OOP�ۺϼ��飺����ϵͳ����Newspaper�����ڷ�">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">111</span>
+                        <span class="hidden-mobile">2026-05-26 OOP�ۺϼ��飺����ϵͳ����Newspaper�����ڷ�</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -465,8 +473,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2026/05/03/%E6%B5%8B%E8%AF%9503/" title="测试03">
-                        <span class="hidden-mobile">测试03</span>
+                      <a href="/2026/05/26/2026-05-26%20Java%EF%BF%BD%EC%B3%A3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDtry-catch-finally%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/" title="2026-05-26 Java�쳣������try-catch-finally��������">
+                        <span class="hidden-mobile">2026-05-26 Java�쳣������try-catch-finally��������</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

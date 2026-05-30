@@ -61,6 +61,25 @@
   
   
   <entry>
+    <title>2026-05-26 OOP综合检验：借书系统扩充Newspaper与逾期费</title>
+    <link href="/2026/05/26/2026-05-26%20OOP%E7%BB%BC%E5%90%88%E6%A3%80%E9%AA%8C%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%85%85Newspaper%E4%B8%8E%E9%80%BE%E6%9C%9F%E8%B4%B9/"/>
+    <url>/2026/05/26/2026-05-26%20OOP%E7%BB%BC%E5%90%88%E6%A3%80%E9%AA%8C%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%85%85Newspaper%E4%B8%8E%E9%80%BE%E6%9C%9F%E8%B4%B9/</url>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>OOP阶段综合检验。不是试卷——一个综合需求，40分钟独立完成。</p><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><ul><li>新增Newspaper类（publishDate字段，可借不可下载）</li><li>四种馆藏各实现不同逾期费：书0.5&#x2F;天、杂志1.0&#x2F;天、报纸0.2&#x2F;天、电子书免费</li><li>Item定义抽象方法calcLateFee(int days)，子类各自实现</li><li>LibraryService加printLateFee(Item, int days)</li></ul><h2 id="覆盖技术点"><a href="#覆盖技术点" class="headerlink" title="覆盖技术点"></a>覆盖技术点</h2><p>继承(extends Item)、抽象方法(calcLateFee)、接口(Downloadable)、多态(四种馆藏同一方法不同返回值)、异常处理(try-catch)</p><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>检验通过。两处细节：Newspaper.publishDate忘入构造方法，Magazine因canBorrow()&#x3D;false未生成逾期费（预期内）。</p><h2 id="OOP阶段总评"><a href="#OOP阶段总评" class="headerlink" title="OOP阶段总评"></a>OOP阶段总评</h2><p>第1课到第9课。借书系统从一个.java文件三个类到Item抽象类+四种子类+Downloadable接口+try-catch-finally。三项设计直觉全是改出来的：删boolean用holderId&#x3D;&#x3D;null、不同点写普通方法不写构造、接口比父类加boolean更轻量。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-05-26 OOP�ۺϼ��飺����ϵͳ����Newspaper�����ڷ�</title>
     <link href="/2026/05/26/2026-05-26%20OOP%EF%BF%BD%DB%BA%CF%BC%EF%BF%BD%EF%BF%BD%E9%A3%BA%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDNewspaper%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%DA%B7%EF%BF%BD/"/>
     <url>/2026/05/26/2026-05-26%20OOP%EF%BF%BD%DB%BA%CF%BC%EF%BF%BD%EF%BF%BD%E9%A3%BA%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDNewspaper%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%DA%B7%EF%BF%BD/</url>
@@ -71,6 +90,25 @@
     <categories>
       
       <category>ѧϰ�ʼ�</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2026-05-26 Java异常处理：try-catch-finally与防御编程</title>
+    <link href="/2026/05/26/2026-05-26%20Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%EF%BC%9Atry-catch-finally%E4%B8%8E%E9%98%B2%E5%BE%A1%E7%BC%96%E7%A8%8B/"/>
+    <url>/2026/05/26/2026-05-26%20Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%EF%BC%9Atry-catch-finally%E4%B8%8E%E9%98%B2%E5%BE%A1%E7%BC%96%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>直接在LibraryService的borrowItem上加异常处理。</p><h2 id="空指针防御"><a href="#空指针防御" class="headerlink" title="空指针防御"></a>空指针防御</h2><p>item&#x3D;null或student&#x3D;null都会NullPointerException。在borrowItem外包裹try-catch。</p><h2 id="try-catch-finally三件套"><a href="#try-catch-finally三件套" class="headerlink" title="try-catch-finally三件套"></a>try-catch-finally三件套</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">try</span> &#123;<br>    <span class="hljs-comment">// 正常逻辑</span><br>&#125; <span class="hljs-keyword">catch</span> (NullPointerException e) &#123;<br>    <span class="hljs-comment">// null异常走这里</span><br>&#125; <span class="hljs-keyword">finally</span> &#123;<br>    <span class="hljs-comment">// 不管出不出异常都执行</span><br>&#125;<br></code></pre></td></tr></table></figure><h2 id="经验总结"><a href="#经验总结" class="headerlink" title="经验总结"></a>经验总结</h2><ul><li>finally空块：浪费了finally永远执行的保证</li><li><code>if(canborrow())&#123;空&#125;else&#123;拒绝&#125;</code>改成了<code>if(!canborrow())&#123;拒绝;return&#125;</code>，消灭空块</li><li>try-catch是兜底抓异常，try-with-resources（第11课）是自动关门</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
       
     </categories>
     
@@ -137,25 +175,6 @@
   
   
   <entry>
-    <title>2026-05-25 �̳����̬������ϵͳ�������ع�</title>
-    <link href="/2026/05/25/2026-05-25%20%EF%BF%BD%CC%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%B9%EF%BF%BD/"/>
-    <url>/2026/05/25/2026-05-25%20%EF%BF%BD%CC%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%B9%EF%BF%BD/</url>
-    
-    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��6�Σ�Ch11�̳����̬�����Լ�д�Ľ���ϵͳ�ϵ��µ�OOP���</p><h2 id="�ع�����"><a href="#�ع�����" class="headerlink" title="�ع�����"></a>�ع�����</h2><p><strong>��һ��</strong>������Item���࣬��Book�Ĺ����ֶ�(name&#x2F;author&#x2F;id&#x2F;holderId)����ȥ����ʼ���󡪡�Item���췽��д���޲�+�Ը�ֵ<code>this.id=id</code>��Book�ƹ�super()ֱ����<code>this.name=name</code>������Ϊ�вι���+<code>super(name,author,id)</code>��</p><p><strong>���ľ���</strong>���̳в�ֻ��ʡ�ظ����롪���Ǹ��ඨ�����������ء�</p><h2 id="��̬"><a href="#��̬" class="headerlink" title="��̬"></a>��̬</h2><p>LibraryService������Book��ΪItem���������߼���Ķ������������ࡣ�½�Magazine���ഫ��ͬһ�׽軹�߼���</p><h2 id="����ת��-vs-����ת��"><a href="#����ת��-vs-����ת��" class="headerlink" title="����ת�� vs ����ת��"></a>����ת�� vs ����ת��</h2><ul><li>����ת�ͣ�<code>Item item = new Book()</code> �� �Զ���ȫ</li><li>����ת�ͣ�<code>Book book = (Book) item</code> �� ����ͨ�������п���ըClassCastException</li></ul><p><strong>����vs����</strong>�����ȱ��������������������Ǳ�ǩ���������ͣ���JVM��һ��֪��������ʲô��ʵ�����ͣ���</p><h2 id="�ؼ����ֱ��"><a href="#�ؼ����ֱ��" class="headerlink" title="�ؼ����ֱ��"></a>�ؼ����ֱ��</h2><p>“��ͬ�ĵ㲻д�빹�췽����д����ͨ����������д”�������챣֤�ṹ��������д������Ϊ������</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>ѧϰ�ʼ�</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2026-05-25 继承与多态：借书系统的五轮重构</title>
     <link href="/2026/05/25/2026-05-25%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%94%E8%BD%AE%E9%87%8D%E6%9E%84/"/>
     <url>/2026/05/25/2026-05-25%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%94%E8%BD%AE%E9%87%8D%E6%9E%84/</url>
@@ -166,6 +185,25 @@
     <categories>
       
       <category>学习笔记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2026-05-25 �̳����̬������ϵͳ�������ع�</title>
+    <link href="/2026/05/25/2026-05-25%20%EF%BF%BD%CC%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%B9%EF%BF%BD/"/>
+    <url>/2026/05/25/2026-05-25%20%EF%BF%BD%CC%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%B9%EF%BF%BD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��6�Σ�Ch11�̳����̬�����Լ�д�Ľ���ϵͳ�ϵ��µ�OOP���</p><h2 id="�ع�����"><a href="#�ع�����" class="headerlink" title="�ع�����"></a>�ع�����</h2><p><strong>��һ��</strong>������Item���࣬��Book�Ĺ����ֶ�(name&#x2F;author&#x2F;id&#x2F;holderId)����ȥ����ʼ���󡪡�Item���췽��д���޲�+�Ը�ֵ<code>this.id=id</code>��Book�ƹ�super()ֱ����<code>this.name=name</code>������Ϊ�вι���+<code>super(name,author,id)</code>��</p><p><strong>���ľ���</strong>���̳в�ֻ��ʡ�ظ����롪���Ǹ��ඨ�����������ء�</p><h2 id="��̬"><a href="#��̬" class="headerlink" title="��̬"></a>��̬</h2><p>LibraryService������Book��ΪItem���������߼���Ķ������������ࡣ�½�Magazine���ഫ��ͬһ�׽軹�߼���</p><h2 id="����ת��-vs-����ת��"><a href="#����ת��-vs-����ת��" class="headerlink" title="����ת�� vs ����ת��"></a>����ת�� vs ����ת��</h2><ul><li>����ת�ͣ�<code>Item item = new Book()</code> �� �Զ���ȫ</li><li>����ת�ͣ�<code>Book book = (Book) item</code> �� ����ͨ�������п���ըClassCastException</li></ul><p><strong>����vs����</strong>�����ȱ��������������������Ǳ�ǩ���������ͣ���JVM��һ��֪��������ʲô��ʵ�����ͣ���</p><h2 id="�ؼ����ֱ��"><a href="#�ؼ����ֱ��" class="headerlink" title="�ؼ����ֱ��"></a>�ؼ����ֱ��</h2><p>“��ͬ�ĵ㲻д�빹�췽����д����ͨ����������д”�������챣֤�ṹ��������д������Ϊ������</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ѧϰ�ʼ�</category>
       
     </categories>
     
