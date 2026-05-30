@@ -251,25 +251,6 @@
   
   
   <entry>
-    <title>2026-05-22 ����ϵͳ���������һ����������Java��Ŀ</title>
-    <link href="/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/"/>
-    <url>/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/</url>
-    
-    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��5�Σ�Ch10�������˼ά����һ�δ������+����һ��������Javaϵͳ��</p><h2 id="ϵͳ���"><a href="#ϵͳ���" class="headerlink" title="ϵͳ���"></a>ϵͳ���</h2><p>�����ࣺStudent������+ѧ�ţ���Book������&#x2F;����&#x2F;���&#x2F;������ID����LibraryService������&#x2F;����&#x2F;���飩</p><h2 id="�ؼ���ƾ���"><a href="#�ؼ���ƾ���" class="headerlink" title="�ؼ���ƾ���"></a>�ؼ���ƾ���</h2><ol><li><strong>��ϵ�ж�</strong>��Student?Book�Ǿۺϲ�����ϡ���ѧ����ҵ���黹��</li><li><strong>�����ֶ�</strong>��ɾ��boolean isBorrowed������holderId&#x3D;&#x3D;null�жϡ�����һ���ֶ���һ����һ�µĿ���״̬</li><li><strong>ƥ�����</strong>���軹ƥ���”����+����”�Ż�Ϊ”���+ѧ��”˫IDƥ�䡪������ͬ����ͻ</li></ol><h2 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h2><ul><li>borrowBook����ȱ��book����</li><li>Checkbook˫�������﷨����</li><li>����public class��һ���ļ�����Javaһ���ļ�ֻ����һ��public class</li></ul><h2 id="�κ���֤"><a href="#�κ���֤" class="headerlink" title="�κ���֤"></a>�κ���֤</h2><p>����������+һ��ѧ������ͨ�������������������ջ���������˵ڶ���ѧ�������ѽ����ı߽���ԡ���else��֧�ɹ����ء�</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>ѧϰ�ʼ�</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2026-05-21 Java对象与类：构造方法、this、super和封装</title>
     <link href="/2026/05/21/2026-05-21%20Java%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%B1%BB%EF%BC%9A%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E3%80%81this%E3%80%81super%E5%92%8C%E5%B0%81%E8%A3%85/"/>
     <url>/2026/05/21/2026-05-21%20Java%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%B1%BB%EF%BC%9A%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E3%80%81this%E3%80%81super%E5%92%8C%E5%B0%81%E8%A3%85/</url>
