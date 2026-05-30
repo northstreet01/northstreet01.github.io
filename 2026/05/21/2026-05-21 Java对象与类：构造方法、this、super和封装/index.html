@@ -19,14 +19,14 @@
   <meta name="author" content="北街">
   <meta name="keywords" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
   
-    <meta name="description" content="白天完全的荒废，专业课我并不听，但是也无合适利用方式，又有着不愿被抓翘课的情节而赖在教室，导致基本荒废。下午实验课，实验操作做不出来，但是无熟人，最后只能默默抄网上的数据晚上打群星（）共勉">
+    <meta name="description" content="构造方法 没有返回类型（void也不写） 名字必须等于类名 new时自动调用 不写则Java送默认无参构造 new做两件事：堆上创建对象分配内存 + 调用构造方法初始化  this指代当前对象。编译器找变量顺序：局部→实例→父类。this.name跳过局部变量直取实例变量。 super super()：调父类构造，只能在构造方法第一行 super.method()：调父类方法，可在任何地方 父类没">
 <meta property="og:type" content="article">
-<meta property="og:title" content="每晚总结之今天真是啥也没干">
-<meta property="og:url" content="http://example.com/2026/05/15/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E4%BB%8A%E5%A4%A9%E7%9C%9F%E6%98%AF%E5%95%A5%E4%B9%9F%E6%B2%A1%E5%B9%B2/index.html">
+<meta property="og:title" content="2026-05-21 Java对象与类：构造方法、this、super和封装">
+<meta property="og:url" content="http://example.com/2026/05/21/2026-05-21%20Java%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%B1%BB%EF%BC%9A%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E3%80%81this%E3%80%81super%E5%92%8C%E5%B0%81%E8%A3%85/index.html">
 <meta property="og:site_name" content="北街的秘密基地">
-<meta property="og:description" content="白天完全的荒废，专业课我并不听，但是也无合适利用方式，又有着不愿被抓翘课的情节而赖在教室，导致基本荒废。下午实验课，实验操作做不出来，但是无熟人，最后只能默默抄网上的数据晚上打群星（）共勉">
+<meta property="og:description" content="构造方法 没有返回类型（void也不写） 名字必须等于类名 new时自动调用 不写则Java送默认无参构造 new做两件事：堆上创建对象分配内存 + 调用构造方法初始化  this指代当前对象。编译器找变量顺序：局部→实例→父类。this.name跳过局部变量直取实例变量。 super super()：调父类构造，只能在构造方法第一行 super.method()：调父类方法，可在任何地方 父类没">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-15T15:40:00.000Z">
+<meta property="article:published_time" content="2026-05-21T15:30:00.000Z">
 <meta property="article:modified_time" content="2026-05-30T09:28:25.094Z">
 <meta property="article:author" content="北街">
 <meta property="article:tag" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
@@ -34,7 +34,7 @@
   
   
   
-  <title>每晚总结之今天真是啥也没干 - 北街的秘密基地</title>
+  <title>2026-05-21 Java对象与类：构造方法、this、super和封装 - 北街的秘密基地</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -293,7 +293,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="每晚总结之今天真是啥也没干"></span>
+            <span id="subtitle" data-typed-text="2026-05-21 Java对象与类：构造方法、this、super和封装"></span>
           
         </div>
 
@@ -304,8 +304,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-05-15 23:40" pubdate>
-          2026年5月15日 晚上
+        <time datetime="2026-05-21 23:30" pubdate>
+          2026年5月21日 晚上
         </time>
       </span>
     
@@ -316,7 +316,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          94 字
+          317 字
         
       </span>
     
@@ -327,7 +327,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -366,12 +366,31 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">每晚总结之今天真是啥也没干</h1>
+            <h1 id="seo-header">2026-05-21 Java对象与类：构造方法、this、super和封装</h1>
             
             
               <div class="markdown-body">
                 
-                <p>白天完全的荒废，专业课我并不听，但是也无合适利用方式，又有着不愿被抓翘课的情节而赖在教室，导致基本荒废。<br>下午实验课，实验操作做不出来，但是无熟人，最后只能默默抄网上的数据<br>晚上打群星（）<br>共勉</p>
+                <h2 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h2><ul>
+<li>没有返回类型（void也不写）</li>
+<li>名字必须等于类名</li>
+<li>new时自动调用</li>
+<li>不写则Java送默认无参构造</li>
+<li>new做两件事：堆上创建对象分配内存 + 调用构造方法初始化</li>
+</ul>
+<h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><p>指代当前对象。编译器找变量顺序：局部→实例→父类。this.name跳过局部变量直取实例变量。</p>
+<h2 id="super"><a href="#super" class="headerlink" title="super"></a>super</h2><ul>
+<li>super()：调父类构造，只能在构造方法第一行</li>
+<li>super.method()：调父类方法，可在任何地方</li>
+<li>父类没有无参构造时必须手动写super(参数)</li>
+</ul>
+<h2 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h2><p>用private隐藏字段，public方法当门。和三层架构Controller→Service→DAO同一逻辑。</p>
+<h2 id="类的关系"><a href="#类的关系" class="headerlink" title="类的关系"></a>类的关系</h2><ul>
+<li>依赖：A方法里用了一下B</li>
+<li>聚合：A拥有B，B可独立</li>
+<li>组合：A拥有B，B生命周期随A</li>
+<li>继承：A是B的一种</li>
+</ul>
 
                 
               </div>
@@ -390,7 +409,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93/" class="category-chain-item">每晚总结</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -410,8 +429,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>每晚总结之今天真是啥也没干</div>
-      <div>http://example.com/2026/05/15/每晚总结之今天真是啥也没干/</div>
+      <div>2026-05-21 Java对象与类：构造方法、this、super和封装</div>
+      <div>http://example.com/2026/05/21/2026-05-21 Java对象与类：构造方法、this、super和封装/</div>
     </div>
     <div class="license-meta">
       
@@ -423,7 +442,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年5月15日</div>
+          <div>2026年5月21日</div>
         </div>
       
       
@@ -455,9 +474,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/05/20/2026-05-20%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%A1%EF%BF%BD%EF%BF%BD%EF%BF%BD%D0%B4%EF%BF%BD%EF%BF%BD%CA%B5%EF%BF%BD%D6%A3%EF%BF%BDJava%20OOP%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C4%B8%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/" title="2026-05-20 ���ء���д��ʵ�֣�Java OOP�������ĸ������">
+                      <a href="/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/" title="2026-05-22 ����ϵͳ���������һ����������Java��Ŀ">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">2026-05-20 ���ء���д��ʵ�֣�Java OOP�������ĸ������</span>
+                        <span class="hidden-mobile">2026-05-22 ����ϵͳ���������һ����������Java��Ŀ</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -465,8 +484,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2026/05/14/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8Bcrud/" title="每晚总结之crud">
-                        <span class="hidden-mobile">每晚总结之crud</span>
+                      <a href="/2026/05/21/2026-05-21%20Java%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%E0%A3%BA%EF%BF%BD%EF%BF%BD%EF%BF%BD%EC%B7%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDthis%EF%BF%BD%EF%BF%BDsuper%EF%BF%BD%CD%B7%EF%BF%BD%D7%B0/" title="2026-05-21 Java�������ࣺ���췽����this��super�ͷ�װ">
+                        <span class="hidden-mobile">2026-05-21 Java�������ࣺ���췽����this��super�ͷ�װ</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
