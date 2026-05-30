@@ -118,25 +118,6 @@
   
   
   <entry>
-    <title>2026-05-26 Java�쳣������try-catch-finally��������</title>
-    <link href="/2026/05/26/2026-05-26%20Java%EF%BF%BD%EC%B3%A3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDtry-catch-finally%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
-    <url>/2026/05/26/2026-05-26%20Java%EF%BF%BD%EC%B3%A3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDtry-catch-finally%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/</url>
-    
-    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��8�Σ�Ch12�쳣������ֱ����LibraryService��borrowItem�ϼ�try-catch-finally��</p><h2 id="��ָ�����"><a href="#��ָ�����" class="headerlink" title="��ָ�����"></a>��ָ�����</h2><p>item&#x3D;null��student&#x3D;null����NullPointerException����borrowItem�����try-catch��</p><h2 id="������"><a href="#������" class="headerlink" title="������"></a>������</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">try</span> &#123;<br>    <span class="hljs-comment">// �����߼�</span><br>&#125; <span class="hljs-keyword">catch</span> (NullPointerException e) &#123;<br>    <span class="hljs-comment">// ��null�쳣������</span><br>&#125; <span class="hljs-keyword">finally</span> &#123;<br>    <span class="hljs-comment">// ���ܳ������쳣��������</span><br>&#125;<br></code></pre></td></tr></table></figure><h2 id="����-1"><a href="#����-1" class="headerlink" title="����"></a>����</h2><ul><li>finally�տ飺�����˷���”finally��Զִ��”�ı�֤</li><li><code>if(canborrow())&#123;��&#125;else&#123;�ܾ�&#125;</code> �� �ĳ�<code>if(!canborrow())&#123;�ܾ�,return&#125;</code>������տ�</li><li>try-catch�Ƕ���ץ�쳣��try-with-resources����11�Σ����Զ�����</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>ѧϰ�ʼ�</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2026-05-25 抽象类与接口：从abstract到Downloadable</title>
     <link href="/2026/05/25/2026-05-25%20%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3%EF%BC%9A%E4%BB%8Eabstract%E5%88%B0Downloadable/"/>
     <url>/2026/05/25/2026-05-25%20%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3%EF%BC%9A%E4%BB%8Eabstract%E5%88%B0Downloadable/</url>
