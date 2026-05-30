@@ -213,6 +213,25 @@
   
   
   <entry>
+    <title>2026-05-20 重载、重写与实现：Java OOP三个核心概念辨析</title>
+    <link href="/2026/05/20/2026-05-20%20%E9%87%8D%E8%BD%BD%E3%80%81%E9%87%8D%E5%86%99%E4%B8%8E%E5%AE%9E%E7%8E%B0%EF%BC%9AJava%20OOP%E4%B8%89%E4%B8%AA%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/"/>
+    <url>/2026/05/20/2026-05-20%20%E9%87%8D%E8%BD%BD%E3%80%81%E9%87%8D%E5%86%99%E4%B8%8E%E5%AE%9E%E7%8E%B0%EF%BC%9AJava%20OOP%E4%B8%89%E4%B8%AA%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/</url>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>三位教师首次联合授课。课后发现重载&#x2F;重写&#x2F;实现三个概念混淆。</p><h2 id="三栏对比"><a href="#三栏对比" class="headerlink" title="三栏对比"></a>三栏对比</h2><h3 id="重载（Overload）"><a href="#重载（Overload）" class="headerlink" title="重载（Overload）"></a>重载（Overload）</h3><ul><li>同名不同参</li><li>同一个类内</li><li>构造方法重载是典型案例</li></ul><h3 id="重写（Override）"><a href="#重写（Override）" class="headerlink" title="重写（Override）"></a>重写（Override）</h3><ul><li>子类覆盖父类方法</li><li><code>extends + @Override</code></li><li>站在父类肩膀上改行为</li></ul><h3 id="实现（Implement）"><a href="#实现（Implement）" class="headerlink" title="实现（Implement）"></a>实现（Implement）</h3><ul><li>兑现接口契约</li><li>接口只声明方法，类必须写出方法体</li><li>从零开始照契约写</li></ul><h2 id="关键结论"><a href="#关键结论" class="headerlink" title="关键结论"></a>关键结论</h2><ul><li>void 本身就是一种返回类型，构造方法连 void 都不写</li><li>@Override 从 Java 6 起也可用于接口方法实现</li><li>构造方法保证结构完整，重写允许行为改变</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-05-20 ���ء���д��ʵ�֣�Java OOP�������ĸ������</title>
     <link href="/2026/05/20/2026-05-20%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%A1%EF%BF%BD%EF%BF%BD%EF%BF%BD%D0%B4%EF%BF%BD%EF%BF%BD%CA%B5%EF%BF%BD%D6%A3%EF%BF%BDJava%20OOP%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C4%B8%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
     <url>/2026/05/20/2026-05-20%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%A1%EF%BF%BD%EF%BF%BD%EF%BF%BD%D0%B4%EF%BF%BD%EF%BF%BD%CA%B5%EF%BF%BD%D6%A3%EF%BF%BDJava%20OOP%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C4%B8%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/</url>
