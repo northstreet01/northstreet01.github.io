@@ -23,6 +23,25 @@
   
   
   <entry>
+    <title>2026-05-28 Java二进制I_O：字节流、字符流与try-with-resources</title>
+    <link href="/2026/05/28/2026-05-28%20Java%E4%BA%8C%E8%BF%9B%E5%88%B6I_O%EF%BC%9A%E5%AD%97%E8%8A%82%E6%B5%81%E3%80%81%E5%AD%97%E7%AC%A6%E6%B5%81%E4%B8%8Etry-with-resources/"/>
+    <url>/2026/05/28/2026-05-28%20Java%E4%BA%8C%E8%BF%9B%E5%88%B6I_O%EF%BC%9A%E5%AD%97%E8%8A%82%E6%B5%81%E3%80%81%E5%AD%97%E7%AC%A6%E6%B5%81%E4%B8%8Etry-with-resources/</url>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>借书系统之后进入了独立的I&#x2F;O基础课——只做读写文件，不叠项目。</p><h2 id="核心三层嵌套"><a href="#核心三层嵌套" class="headerlink" title="核心三层嵌套"></a>核心三层嵌套</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">try</span> (<span class="hljs-type">FileInputStream</span> <span class="hljs-variable">fis</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">FileInputStream</span>(<span class="hljs-string">&quot;test.txt&quot;</span>);<br>     <span class="hljs-type">InputStreamReader</span> <span class="hljs-variable">isr</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">InputStreamReader</span>(fis, <span class="hljs-string">&quot;UTF-8&quot;</span>);<br>     <span class="hljs-type">BufferedReader</span> <span class="hljs-variable">br</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BufferedReader</span>(isr)) &#123;<br><br>    String line;<br>    <span class="hljs-keyword">while</span> ((line = br.readLine()) != <span class="hljs-literal">null</span>) &#123;<br>        System.out.println(line);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p><strong>字节流 → 字符流 → 缓冲流</strong>，每一层加一项功能：</p><ul><li>FileInputStream — 最底层，一个字节一个字节读</li><li>InputStreamReader — 把字节拼成字符，指定编码（UTF-8）</li><li>BufferedReader — 一次读一行，带缓冲</li></ul><p>写文件反过来，同样的三层：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">try</span> (<span class="hljs-type">FileOutputStream</span> <span class="hljs-variable">fos</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">FileOutputStream</span>(<span class="hljs-string">&quot;output.txt&quot;</span>);<br>     <span class="hljs-type">OutputStreamWriter</span> <span class="hljs-variable">osw</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">OutputStreamWriter</span>(fos, <span class="hljs-string">&quot;UTF-8&quot;</span>);<br>     <span class="hljs-type">BufferedWriter</span> <span class="hljs-variable">bw</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BufferedWriter</span>(osw)) &#123;<br><br>    bw.write(<span class="hljs-string">&quot;内容&quot;</span>);<br>    bw.newLine();<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="try-with-resources（Java-7）"><a href="#try-with-resources（Java-7）" class="headerlink" title="try-with-resources（Java 7）"></a>try-with-resources（Java 7）</h2><p>try 后面加一对括号，把需要关的资源放进去。不管代码正常跑完还是中间抛异常——括号里的资源都会被自动关闭。不用手动写 close()，不会忘，不会泄露文件句柄。</p><p>和第 8 课的 try-catch 是两回事：try-catch 是兜底抓异常，try-with-resources 是自动关门。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><table><thead><tr><th>流向</th><th>字节流</th><th>字符流</th><th>缓冲流</th></tr></thead><tbody><tr><td>读</td><td>FileInputStream</td><td>InputStreamReader</td><td>BufferedReader</td></tr><tr><td>写</td><td>FileOutputStream</td><td>OutputStreamWriter</td><td>BufferedWriter</td></tr></tbody></table><p>十个名词，一节课扫完。读和写两端对称，try-with-resources 自动关门。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-05-27 Java集合框架：List、Set、Map一课通</title>
     <link href="/2026/05/27/2026-05-27%20Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%EF%BC%9AList%E3%80%81Set%E3%80%81Map%E4%B8%80%E8%AF%BE%E9%80%9A/"/>
     <url>/2026/05/27/2026-05-27%20Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%EF%BC%9AList%E3%80%81Set%E3%80%81Map%E4%B8%80%E8%AF%BE%E9%80%9A/</url>
