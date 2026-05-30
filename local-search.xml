@@ -80,6 +80,25 @@
   
   
   <entry>
+    <title>2026-05-21 C��Java�������ؼ�����</title>
+    <link href="/2026/05/21/2026-05-21%20C%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%BC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+    <url>/2026/05/21/2026-05-21%20C%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%BC%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��2-3�Ρ����ΪC����֪ʶ��Ⱦ��Java���⡪��switchֻ��int�����������õȶ���C����ϰ�ߡ�����C&#x2F;Java����ר��Ρ�</p><h2 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h2><ol><li><strong>switch</strong>��Cֻ��int �� Java֧��String&#x2F;enum&#x2F;��װ��&#x2F;byte&#x2F;short&#x2F;char</li><li><strong>��������</strong>��C��ָ�� �� Javaȫֵ���ݡ��Ķ����ڲ�(<code>arr[0]=999</code>)���濴�ü��������ñ���(<code>arr=new int[10]</code>)���濴����</li><li><strong>��������</strong>��<code>int arr[]</code> �� Java�Ƽ� <code>int[] arr</code></li><li><strong>String</strong>��C��char[]�ɱ� �� Java String���ɱ�(Immutable)�����ַ���������(String Pool)�Զ�ȥ��</li><li><strong>forѭ��</strong>��Cֻ�д�ͳfor �� Java����for-each����������ֻ��������</li><li><strong>����</strong>��C���㼴�� �� Java��if()ֻ����boolean����ʽ</li></ol><h2 id="�����ջ�"><a href="#�����ջ�" class="headerlink" title="�����ջ�"></a>�����ջ�</h2><p>������Ҫ˳��ʱ���ߣ����ܵ�һ����������ͬһ�����ڲ�ͬʱ�̿����в�ֵͬ��</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ѧϰ�ʼ�</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-05-20 ���ء���д��ʵ�֣�Java OOP�������ĸ������</title>
     <link href="/2026/05/20/2026-05-20%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%A1%EF%BF%BD%EF%BF%BD%EF%BF%BD%D0%B4%EF%BF%BD%EF%BF%BD%CA%B5%EF%BF%BD%D6%A3%EF%BF%BDJava%20OOP%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C4%B8%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
     <url>/2026/05/20/2026-05-20%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%D8%A1%EF%BF%BD%EF%BF%BD%EF%BF%BD%D0%B4%EF%BF%BD%EF%BF%BD%CA%B5%EF%BF%BD%D6%A3%EF%BF%BDJava%20OOP%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C4%B8%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/</url>
