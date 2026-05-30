@@ -156,25 +156,6 @@
   
   
   <entry>
-    <title>2026-05-25 ��������ӿڣ���abstract��Downloadable</title>
-    <link href="/2026/05/25/2026-05-25%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%BF%DA%A3%EF%BF%BD%EF%BF%BD%EF%BF%BDabstract%EF%BF%BD%EF%BF%BDDownloadable/"/>
-    <url>/2026/05/25/2026-05-25%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%BF%DA%A3%EF%BF%BD%EF%BF%BD%EF%BF%BDabstract%EF%BF%BD%EF%BF%BDDownloadable/</url>
-    
-    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��7�Σ�Ch13��������ӿڡ������ڽ���ϵͳ�ϵ��¸��</p><h2 id="������"><a href="#������" class="headerlink" title="������"></a>������</h2><p>Item��<code>abstract class</code>������ֱֹ��new Item()��������ı��ʣ�ֻ���Ǽܣ����ܱ�ʵ������</p><p>���󷽷�<code>canBorrow()</code>����ֻ������ʵ�֣���������Լ�д��Book����true��Magazine����false��</p><h2 id="�ӿ�"><a href="#�ӿ�" class="headerlink" title="�ӿ�"></a>�ӿ�</h2><p>�½�<code>Downloadable</code>�ӿڣ�����<code>download()</code>��EBook�̳�Bookͬʱʵ��Downloadable��</p><p>�ӿ�vs�����ࣺ</p><ul><li>��������״̬���ֶΡ����췽�������ǹǼ�</li><li>�ӿ���״̬����������������ǩ</li><li>���̳�������ʹ���ýӿ��������</li></ul><h2 id="���ֱ��"><a href="#���ֱ��" class="headerlink" title="���ֱ��"></a>���ֱ��</h2><p>�ܾ�”��Item��boolean downloadable”����ѡ���˽ӿڡ��ӵ�5��ɾ����boolean����7��ѡ�ӿڣ�������ƾ��߶���”����Ⱦ����”��</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>ѧϰ�ʼ�</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2026-05-25 继承与多态：借书系统的五轮重构</title>
     <link href="/2026/05/25/2026-05-25%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%94%E8%BD%AE%E9%87%8D%E6%9E%84/"/>
     <url>/2026/05/25/2026-05-25%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%94%E8%BD%AE%E9%87%8D%E6%9E%84/</url>
