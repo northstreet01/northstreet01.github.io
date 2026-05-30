@@ -596,6 +596,60 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2026/05/25/2026-05-25%20%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3%EF%BC%9A%E4%BB%8Eabstract%E5%88%B0Downloadable/" target="_self">
+          2026-05-25 抽象类与接口：从abstract到Downloadable
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/25/2026-05-25%20%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3%EF%BC%9A%E4%BB%8Eabstract%E5%88%B0Downloadable/" target="_self">
+        <div>
+          抽象类Item加abstract class，禁止直接new Item()。抽象类只当骨架，不能被实例化。 抽象方法canBorrow()——只声明不实现，子类必须自己写。Book返回true，Magazine返回false。 接口新建Downloadable接口，声明download()。EBook继承Book同时实现Downloadable。 接口 vs 抽象类 抽象类有状态（字段、构造方法）
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-05-25 23:59" pubdate>
+              2026-05-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2026/05/25/2026-05-25%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%BF%DA%A3%EF%BF%BD%EF%BF%BD%EF%BF%BDabstract%EF%BF%BD%EF%BF%BDDownloadable/" target="_self">
           2026-05-25 ��������ӿڣ���abstract��Downloadable
         </a>
@@ -704,15 +758,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/" target="_self">
-          每晚总结之补上
+        <a href="/2026/05/25/2026-05-25%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%94%E8%BD%AE%E9%87%8D%E6%9E%84/" target="_self">
+          2026-05-25 继承与多态：借书系统的五轮重构
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/25/2026-05-25%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%94%E8%BD%AE%E9%87%8D%E6%9E%84/" target="_self">
         <div>
-          一晃就已经十天没有写过每晚总结了，这十天经历了什么呢，从只会纯数据库命令到api指令，到学会部分前端知识，学会三层架构，有一部分进步吧。对java的语法进行了更精深的了解，不只是之前仅限于知道怎么写吧，至少更清楚为什么了，写了一篇产品的会议文档，虽然挺随手的，但是也确实有思考。剩余似乎并没有很多学习或其他的表现，也有很大成分是因为自己的学习板块没有很大的突破，在不是每天记录的情况下就很难溯源了。晚
+          重构过程在自己写的借书系统上叠继承和多态。 第一步：创建Item父类，抽取公共字段(name&#x2F;author&#x2F;id&#x2F;holderId)。初始错误——Item构造无参+自赋值this.id&#x3D;id，Book绕过super()直接赋值。纠正为有参构造+super(name,author,id)。 核心觉悟：继承不只是省重复代码，是父类定规则，子类遵守。 多态验证Li
         </div>
       </a>
 
@@ -720,62 +774,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-25 00:11" pubdate>
+            <time datetime="2026-05-25 22:00" pubdate>
               2026-05-25
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93/" class="category-chain-item">每晚总结</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/22/2026-05-22%20%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%EF%BC%9A%E4%BB%8E%E9%9B%B6%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84Java%E9%A1%B9%E7%9B%AE/" target="_self">
-          2026-05-22 借书系统：从零设计一个面向对象的Java项目
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/22/2026-05-22%20%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%EF%BC%9A%E4%BB%8E%E9%9B%B6%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84Java%E9%A1%B9%E7%9B%AE/" target="_self">
-        <div>
-          背景第一次从零设计+编码一个完整的Java系统。 系统设计三个类：Student（姓名+学号）、Book（书名&#x2F;作者&#x2F;编号&#x2F;持有人ID）、LibraryService（借书&#x2F;还书&#x2F;查书） 关键决策 关系判断：Student-Book是聚合不是组合，学生毕业书还在 冗余消除：删掉boolean isBorrowed，用holderId&#x3D;&#
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-22 17:00" pubdate>
-              2026-05-22
             </time>
           </div>
         
@@ -812,15 +812,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/" target="_self">
-          2026-05-22 ����ϵͳ���������һ����������Java��Ŀ
+        <a href="/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/" target="_self">
+          每晚总结之补上
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/" target="_self">
         <div>
-          ������5�Σ�Ch10�������˼ά����һ�δ������+����һ��������Javaϵͳ�� ϵͳ��������ࣺStudent������+ѧ�ţ���Book������&#x2F;����&#x2F;���&#x2F;������ID����LibraryService������&#x2F;����&#x2F;���飩 �ؼ���ƾ��� ��ϵ�ж���Stud
+          一晃就已经十天没有写过每晚总结了，这十天经历了什么呢，从只会纯数据库命令到api指令，到学会部分前端知识，学会三层架构，有一部分进步吧。对java的语法进行了更精深的了解，不只是之前仅限于知道怎么写吧，至少更清楚为什么了，写了一篇产品的会议文档，虽然挺随手的，但是也确实有思考。剩余似乎并没有很多学习或其他的表现，也有很大成分是因为自己的学习板块没有很大的突破，在不是每天记录的情况下就很难溯源了。晚
         </div>
       </a>
 
@@ -828,8 +828,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-22 17:00" pubdate>
-              2026-05-22
+            <time datetime="2026-05-25 00:11" pubdate>
+              2026-05-25
             </time>
           </div>
         
@@ -844,7 +844,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%D1%A7%CF%B0%EF%BF%BD%CA%BC%EF%BF%BD/" class="category-chain-item">ѧϰ�ʼ�</a>
+  <a href="/categories/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93/" class="category-chain-item">每晚总结</a>
   
   
 

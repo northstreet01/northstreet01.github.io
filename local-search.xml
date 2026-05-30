@@ -99,6 +99,25 @@
   
   
   <entry>
+    <title>2026-05-25 抽象类与接口：从abstract到Downloadable</title>
+    <link href="/2026/05/25/2026-05-25%20%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3%EF%BC%9A%E4%BB%8Eabstract%E5%88%B0Downloadable/"/>
+    <url>/2026/05/25/2026-05-25%20%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3%EF%BC%9A%E4%BB%8Eabstract%E5%88%B0Downloadable/</url>
+    
+    <content type="html"><![CDATA[<h2 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h2><p>Item加abstract class，禁止直接new Item()。抽象类只当骨架，不能被实例化。</p><p>抽象方法canBorrow()——只声明不实现，子类必须自己写。Book返回true，Magazine返回false。</p><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>新建Downloadable接口，声明download()。EBook继承Book同时实现Downloadable。</p><h2 id="接口-vs-抽象类"><a href="#接口-vs-抽象类" class="headerlink" title="接口 vs 抽象类"></a>接口 vs 抽象类</h2><ul><li>抽象类有状态（字段、构造方法），是骨架</li><li>接口无状态，是轻量的能力标签</li><li>单继承限制迫使用接口组合能力</li></ul><h2 id="设计直觉进化"><a href="#设计直觉进化" class="headerlink" title="设计直觉进化"></a>设计直觉进化</h2><p>从第5课删boolean，到第6课抽Item父类，到第7课选接口而不在Item加boolean downloadable。三次决策方向一致：不污染父类。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-05-25 ��������ӿڣ���abstract��Downloadable</title>
     <link href="/2026/05/25/2026-05-25%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%BF%DA%A3%EF%BF%BD%EF%BF%BD%EF%BF%BDabstract%EF%BF%BD%EF%BF%BDDownloadable/"/>
     <url>/2026/05/25/2026-05-25%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%BF%DA%A3%EF%BF%BD%EF%BF%BD%EF%BF%BDabstract%EF%BF%BD%EF%BF%BDDownloadable/</url>
@@ -137,6 +156,25 @@
   
   
   <entry>
+    <title>2026-05-25 继承与多态：借书系统的五轮重构</title>
+    <link href="/2026/05/25/2026-05-25%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%94%E8%BD%AE%E9%87%8D%E6%9E%84/"/>
+    <url>/2026/05/25/2026-05-25%20%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81%EF%BC%9A%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%94%E8%BD%AE%E9%87%8D%E6%9E%84/</url>
+    
+    <content type="html"><![CDATA[<h2 id="重构过程"><a href="#重构过程" class="headerlink" title="重构过程"></a>重构过程</h2><p>在自己写的借书系统上叠继承和多态。</p><p>第一步：创建Item父类，抽取公共字段(name&#x2F;author&#x2F;id&#x2F;holderId)。初始错误——Item构造无参+自赋值this.id&#x3D;id，Book绕过super()直接赋值。纠正为有参构造+super(name,author,id)。</p><p>核心觉悟：继承不只是省重复代码，是父类定规则，子类遵守。</p><h2 id="多态验证"><a href="#多态验证" class="headerlink" title="多态验证"></a>多态验证</h2><p>LibraryService参数从Book改为Item——借书逻辑零改动兼容所有子类。新建Magazine子类传进同一套借还逻辑，成功。</p><h2 id="向上转型-vs-向下转型"><a href="#向上转型-vs-向下转型" class="headerlink" title="向上转型 vs 向下转型"></a>向上转型 vs 向下转型</h2><ul><li>向上：Item item &#x3D; new Book()，自动安全</li><li>向下：Book book &#x3D; (Book) item，编译通过运行可能炸ClassCastException</li></ul><p>咖啡杯比喻：编译器看杯盖标签（声明类型），JVM喝一口知道里面是什么（实际类型）。</p><h2 id="关键设计直觉"><a href="#关键设计直觉" class="headerlink" title="关键设计直觉"></a>关键设计直觉</h2><p>不同的点不写入构造方法，写成普通方法方便重写。构造保证结构完整，重写允许行为革命。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>每晚总结之补上</title>
     <link href="/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/"/>
     <url>/2026/05/24/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E8%A1%A5%E4%B8%8A/</url>
@@ -156,25 +194,6 @@
   
   
   <entry>
-    <title>2026-05-22 借书系统：从零设计一个面向对象的Java项目</title>
-    <link href="/2026/05/22/2026-05-22%20%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%EF%BC%9A%E4%BB%8E%E9%9B%B6%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84Java%E9%A1%B9%E7%9B%AE/"/>
-    <url>/2026/05/22/2026-05-22%20%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%EF%BC%9A%E4%BB%8E%E9%9B%B6%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84Java%E9%A1%B9%E7%9B%AE/</url>
-    
-    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>第一次从零设计+编码一个完整的Java系统。</p><h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><p>三个类：Student（姓名+学号）、Book（书名&#x2F;作者&#x2F;编号&#x2F;持有人ID）、LibraryService（借书&#x2F;还书&#x2F;查书）</p><h2 id="关键决策"><a href="#关键决策" class="headerlink" title="关键决策"></a>关键决策</h2><ol><li>关系判断：Student-Book是聚合不是组合，学生毕业书还在</li><li>冗余消除：删掉boolean isBorrowed，用holderId&#x3D;&#x3D;null判断，少一个字段少一个不一致状态</li><li>匹配优化：借还匹配从书名+姓名升级为编号+学号，双ID避免同名冲突</li></ol><h2 id="编译踩坑"><a href="#编译踩坑" class="headerlink" title="编译踩坑"></a>编译踩坑</h2><ul><li>borrowBook方法缺book参数</li><li>双层括号语法错误</li><li>三个public class塞一个文件——Java一个文件只能一个public class</li></ul><h2 id="测试验证"><a href="#测试验证" class="headerlink" title="测试验证"></a>测试验证</h2><p>两书一学生走通借书-查书-还书闭环。额外加第二个学生抢借同一本书的边界测试——else分支成功拦截。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>学习笔记</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2026-05-22 ����ϵͳ���������һ����������Java��Ŀ</title>
     <link href="/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/"/>
     <url>/2026/05/22/2026-05-22%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D2%BB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDJava%EF%BF%BD%EF%BF%BD%C4%BF/</url>
@@ -185,6 +204,25 @@
     <categories>
       
       <category>ѧϰ�ʼ�</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2026-05-22 借书系统：从零设计一个面向对象的Java项目</title>
+    <link href="/2026/05/22/2026-05-22%20%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%EF%BC%9A%E4%BB%8E%E9%9B%B6%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84Java%E9%A1%B9%E7%9B%AE/"/>
+    <url>/2026/05/22/2026-05-22%20%E5%80%9F%E4%B9%A6%E7%B3%BB%E7%BB%9F%EF%BC%9A%E4%BB%8E%E9%9B%B6%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84Java%E9%A1%B9%E7%9B%AE/</url>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>第一次从零设计+编码一个完整的Java系统。</p><h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><p>三个类：Student（姓名+学号）、Book（书名&#x2F;作者&#x2F;编号&#x2F;持有人ID）、LibraryService（借书&#x2F;还书&#x2F;查书）</p><h2 id="关键决策"><a href="#关键决策" class="headerlink" title="关键决策"></a>关键决策</h2><ol><li>关系判断：Student-Book是聚合不是组合，学生毕业书还在</li><li>冗余消除：删掉boolean isBorrowed，用holderId&#x3D;&#x3D;null判断，少一个字段少一个不一致状态</li><li>匹配优化：借还匹配从书名+姓名升级为编号+学号，双ID避免同名冲突</li></ol><h2 id="编译踩坑"><a href="#编译踩坑" class="headerlink" title="编译踩坑"></a>编译踩坑</h2><ul><li>borrowBook方法缺book参数</li><li>双层括号语法错误</li><li>三个public class塞一个文件——Java一个文件只能一个public class</li></ul><h2 id="测试验证"><a href="#测试验证" class="headerlink" title="测试验证"></a>测试验证</h2><p>两书一学生走通借书-查书-还书闭环。额外加第二个学生抢借同一本书的边界测试——else分支成功拦截。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
       
     </categories>
     
