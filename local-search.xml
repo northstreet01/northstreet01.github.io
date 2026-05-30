@@ -61,6 +61,25 @@
   
   
   <entry>
+    <title>2026-05-26 OOP�ۺϼ��飺����ϵͳ����Newspaper�����ڷ�</title>
+    <link href="/2026/05/26/2026-05-26%20OOP%EF%BF%BD%DB%BA%CF%BC%EF%BF%BD%EF%BF%BD%E9%A3%BA%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDNewspaper%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%DA%B7%EF%BF%BD/"/>
+    <url>/2026/05/26/2026-05-26%20OOP%EF%BF%BD%DB%BA%CF%BC%EF%BF%BD%EF%BF%BD%E9%A3%BA%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CF%B5%CD%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDNewspaper%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%DA%B7%EF%BF%BD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p>��9�Σ�OOP�ۺϼ��顣���Ǿ��ӡ�����һ���ۺ�����40���Ӷ���������+���롣</p><h2 id="����-1"><a href="#����-1" class="headerlink" title="����"></a>����</h2><ul><li>����Newspaper�ࣨ��publishDate�ֶΣ��ɽ費�����أ�</li><li>ÿ�ֹݲ����ڷѲ�ͬ����0.5Ԫ&#x2F;�졢��־1Ԫ&#x2F;�졢��ֽ0.2Ԫ&#x2F;�졢���������</li><li>Item������󷽷�<code>calcLateFee(int days)</code>���������ʵ��</li><li>LibraryService��<code>printLateFee(Item, int days)</code></li><li>Main�������ֹݲظ�һ������ӡ����5�����</li></ul><h2 id="���AE�����"><a href="#���AE�����" class="headerlink" title="���Ǽ�����"></a>���Ǽ�����</h2><p>�̳�(extends Item)�����󷽷�(calcLateFee)���ӿ�(Downloadable��Newspaper��ʵ��)����̬(���ֹݲ�ͬһ������ͬ����ֵ)���쳣����(try-catch)</p><h2 id="���"><a href="#���" class="headerlink" title="���"></a>���</h2><p>����ͨ��������ϸ��ȱʧ��Newspaper.publishDate���Ž����췽����Magazine��canBorrow()&#x3D;falseδ�������ڷѣ�Ԥ���ڣ�debugȷ�Ϲ�����</p><h2 id="OOP�׶��ܽ�"><a href="#OOP�׶��ܽ�" class="headerlink" title="OOP�׶��ܽ�"></a>OOP�׶��ܽ�</h2><p>��1�Ρ���9�Ρ�����ϵͳ��һ��.java�ļ������ൽItem������+��������+Downloadable�ӿ�+try-catch-finally���������ֱ�����Ǹĳ����ģ�ɾboolean��holderId&#x3D;&#x3D;null����ͬ��д��ͨ������д���졢�ӿڱȸ����boolean��������</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ѧϰ�ʼ�</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-05-26 Java�쳣������try-catch-finally��������</title>
     <link href="/2026/05/26/2026-05-26%20Java%EF%BF%BD%EC%B3%A3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDtry-catch-finally%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
     <url>/2026/05/26/2026-05-26%20Java%EF%BF%BD%EC%B3%A3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BDtry-catch-finally%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/</url>
