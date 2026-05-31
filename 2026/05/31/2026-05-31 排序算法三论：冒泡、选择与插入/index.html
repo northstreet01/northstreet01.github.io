@@ -19,14 +19,14 @@
   <meta name="author" content="北街">
   <meta name="keywords" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
   
-    <meta name="description" content="今晚受到佬的启发，在今天之前的较长时间，碍于opencode装的是Github copliot的api,体验感简直依托，导致对于此类工具使用较少，恰逢最近dsv4打折，突发奇想便装了cc，打算使用cc进行项目式学习，学习sql。cc使用环境调配，直接改环境接入dsv4的api，所以并没有装cc-switch，而是直接使用的dsv4，不得不说dsv4确实便宜，感谢梁圣开源（）开展的项目是比较常见的t">
+    <meta name="description" content="一、为什么需要排序借书系统的书架用 List&lt;Item&gt; 管理馆藏。数据有了，但顺序是乱的——想按逾期费从高到低排列、按书名字典序排列，书架做不到。排序是让数据”有序”的第一步。 二、冒泡排序（Bubble Sort）直觉：相邻比较，大的往右换。像气泡一样，最大的数浮到最右端。 核心逻辑：  从 index&#x3D;0 开始，与相邻元素比较 如果左边比右边大，交换 一轮走完，最大数归">
 <meta property="og:type" content="article">
-<meta property="og:title" content="每晚总结之第四篇-使用cc">
-<meta property="og:url" content="http://example.com/2026/05/11/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E4%B9%8B%E7%AC%AC%E5%9B%9B%E7%AF%87-%E4%BD%BF%E7%94%A8cc/index.html">
+<meta property="og:title" content="2026-05-31 排序算法三论：冒泡、选择与插入">
+<meta property="og:url" content="http://example.com/2026/05/31/2026-05-31%20%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E4%B8%89%E8%AE%BA%EF%BC%9A%E5%86%92%E6%B3%A1%E3%80%81%E9%80%89%E6%8B%A9%E4%B8%8E%E6%8F%92%E5%85%A5/index.html">
 <meta property="og:site_name" content="北街的秘密基地">
-<meta property="og:description" content="今晚受到佬的启发，在今天之前的较长时间，碍于opencode装的是Github copliot的api,体验感简直依托，导致对于此类工具使用较少，恰逢最近dsv4打折，突发奇想便装了cc，打算使用cc进行项目式学习，学习sql。cc使用环境调配，直接改环境接入dsv4的api，所以并没有装cc-switch，而是直接使用的dsv4，不得不说dsv4确实便宜，感谢梁圣开源（）开展的项目是比较常见的t">
+<meta property="og:description" content="一、为什么需要排序借书系统的书架用 List&lt;Item&gt; 管理馆藏。数据有了，但顺序是乱的——想按逾期费从高到低排列、按书名字典序排列，书架做不到。排序是让数据”有序”的第一步。 二、冒泡排序（Bubble Sort）直觉：相邻比较，大的往右换。像气泡一样，最大的数浮到最右端。 核心逻辑：  从 index&#x3D;0 开始，与相邻元素比较 如果左边比右边大，交换 一轮走完，最大数归">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-11T15:39:00.000Z">
+<meta property="article:published_time" content="2026-05-31T14:25:10.847Z">
 <meta property="article:modified_time" content="2026-05-31T14:25:10.847Z">
 <meta property="article:author" content="北街">
 <meta property="article:tag" content="CS50, 编程, 音乐, 鬼畜，动漫观后感">
@@ -34,7 +34,7 @@
   
   
   
-  <title>每晚总结之第四篇-使用cc - 北街的秘密基地</title>
+  <title>2026-05-31 排序算法三论：冒泡、选择与插入 - 北街的秘密基地</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -293,7 +293,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="每晚总结之第四篇-使用cc"></span>
+            <span id="subtitle" data-typed-text="2026-05-31 排序算法三论：冒泡、选择与插入"></span>
           
         </div>
 
@@ -304,8 +304,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-05-11 23:39" pubdate>
-          2026年5月11日 晚上
+        <time datetime="2026-05-31 22:25" pubdate>
+          2026年5月31日 晚上
         </time>
       </span>
     
@@ -316,7 +316,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          507 字
+          1.3k 字
         
       </span>
     
@@ -327,7 +327,7 @@
         
         
         
-          5 分钟
+          12 分钟
         
       </span>
     
@@ -366,12 +366,65 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">每晚总结之第四篇-使用cc</h1>
+            <h1 id="seo-header">2026-05-31 排序算法三论：冒泡、选择与插入</h1>
             
             
               <div class="markdown-body">
                 
-                <p>今晚受到佬的启发，在今天之前的较长时间，碍于opencode装的是Github copliot的api,体验感简直依托，导致对于此类工具使用较少，恰逢最近dsv4打折，突发奇想便装了cc，打算使用cc进行项目式学习，学习sql。<br>cc使用环境调配，直接改环境接入dsv4的api，所以并没有装cc-switch，而是直接使用的dsv4，不得不说dsv4确实便宜，感谢梁圣开源（）<br>开展的项目是比较常见的todolist,后端是springboot,数据库是mysql，前端没有安排，可能就是三大件堆上，没有其他前端框架安排。<br>然后似乎没有其他了，还有就是给cc装了三个skill，superpower,claude-hud,skill-creator,<br>claude-hud算是极其实用的，虽然不能像登录的一样看到剩余额度，但是能反馈上下文百分比还有已完成事件，功能性强，<br>superpower的话，特定全程vibe的情况下很好用，毕竟会自检，但是不太常用于项目学习，因为过于工作化，效率至上的skill无法适应边学边做的低效，<br>最后一个kill-creator就没怎么使用了，毕竟目前还没有什么需求，<br>今天也差不多结束了，晚安！</p>
+                <h2 id="一、为什么需要排序"><a href="#一、为什么需要排序" class="headerlink" title="一、为什么需要排序"></a>一、为什么需要排序</h2><p>借书系统的书架用 <code>List&lt;Item&gt;</code> 管理馆藏。数据有了，但顺序是乱的——想按逾期费从高到低排列、按书名字典序排列，书架做不到。排序是让数据”有序”的第一步。</p>
+<h2 id="二、冒泡排序（Bubble-Sort）"><a href="#二、冒泡排序（Bubble-Sort）" class="headerlink" title="二、冒泡排序（Bubble Sort）"></a>二、冒泡排序（Bubble Sort）</h2><p><strong>直觉</strong>：相邻比较，大的往右换。像气泡一样，最大的数浮到最右端。</p>
+<p><strong>核心逻辑</strong>：</p>
+<ol>
+<li>从 index&#x3D;0 开始，与相邻元素比较</li>
+<li>如果左边比右边大，交换</li>
+<li>一轮走完，最大数归位到最右端</li>
+<li>下一轮走到倒数第二（不需要再走到已归位的位置）</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">bubbleSort</span><span class="hljs-params">(<span class="hljs-type">int</span>[] arr)</span> &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; arr.length; i++) &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">j</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; j &lt; arr.length - <span class="hljs-number">1</span> - i; j++) &#123;<br>            <span class="hljs-keyword">if</span> (arr[j] &gt; arr[j + <span class="hljs-number">1</span>]) &#123;<br>                <span class="hljs-type">int</span> <span class="hljs-variable">temp</span> <span class="hljs-operator">=</span> arr[j];<br>                arr[j] = arr[j + <span class="hljs-number">1</span>];<br>                arr[j + <span class="hljs-number">1</span>] = temp;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>要点</strong>：内层 <code>-i</code> 是关键优化——已归位的元素不需要再比较。</p>
+<h2 id="三、选择排序（Selection-Sort）"><a href="#三、选择排序（Selection-Sort）" class="headerlink" title="三、选择排序（Selection Sort）"></a>三、选择排序（Selection Sort）</h2><p><strong>直觉</strong>：每轮挑最小的，放到对应位置。像挑豆子——坏的丢掉，好的装袋。</p>
+<p><strong>核心逻辑</strong>：</p>
+<ol>
+<li>设当前位置 i 为最小值位置（minIndex）</li>
+<li>从 i+1 往后扫，找到实际最小值</li>
+<li>与 i 位交换</li>
+<li>下一轮从 i+1 开始</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">selectionSort</span><span class="hljs-params">(<span class="hljs-type">int</span>[] arr)</span> &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; arr.length; i++) &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">minIndex</span> <span class="hljs-operator">=</span> i;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">j</span> <span class="hljs-operator">=</span> i + <span class="hljs-number">1</span>; j &lt; arr.length; j++) &#123;<br>            <span class="hljs-keyword">if</span> (arr[j] &lt; arr[minIndex]) &#123;<br>                minIndex = j;<br>            &#125;<br>        &#125;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">temp</span> <span class="hljs-operator">=</span> arr[i];<br>        arr[i] = arr[minIndex];<br>        arr[minIndex] = temp;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="四、复杂度对比"><a href="#四、复杂度对比" class="headerlink" title="四、复杂度对比"></a>四、复杂度对比</h2><table>
+<thead>
+<tr>
+<th>算法</th>
+<th>比较次数</th>
+<th>交换次数</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>冒泡</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+<td>相邻比就换，交换频繁</td>
+</tr>
+<tr>
+<td>选择</td>
+<td>O(n²)</td>
+<td>O(n)</td>
+<td>一轮只换一次，交换少</td>
+</tr>
+</tbody></table>
+<p>两者比较次数相同：n(n-1)&#x2F;2。但选择的交换次数远少于冒泡——在交换代价高的场景下选择更优。</p>
+<h2 id="五、插入排序（Insertion-Sort）"><a href="#五、插入排序（Insertion-Sort）" class="headerlink" title="五、插入排序（Insertion Sort）"></a>五、插入排序（Insertion Sort）</h2><p><strong>直觉</strong>：手里有一段排好的牌，每次抽一张新牌，插入到已排好段中的正确位置。</p>
+<p><strong>流程</strong>（已推完，代码待补）：</p>
+<ol>
+<li>从 index&#x3D;1 开始抽牌（index&#x3D;0 默认已排好）</li>
+<li>向左倒着比——遇到比自己大的就右移一格</li>
+<li>找到正确位置，插入</li>
+</ol>
+<h2 id="六、今日反思"><a href="#六、今日反思" class="headerlink" title="六、今日反思"></a>六、今日反思</h2><p>今天下午递归+晚上排序，连续两节。冒泡和选择从直觉推到代码一气呵成——祥子说”算法思维的核心不是记代码，是能独立推导出过程”。三条推导路径全是自己走完的：冒泡从相邻比较到大数浮现，选择从挑最小到 minIndex 追踪，插入从手牌已排好到倒着比右移插入。</p>
+<p>插入排序在最后一步掉链子了——流程全推完，代码写到一半大脑熄火。主动喊了停。以前不会喊停——会硬撑着敲，第二天看全是 bug。今晚的进步不是多学了一个算法，是知道什么时候该停下来。</p>
 
                 
               </div>
@@ -390,7 +443,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93/" class="category-chain-item">每晚总结</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -410,8 +463,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>每晚总结之第四篇-使用cc</div>
-      <div>http://example.com/2026/05/11/每晚总结之第四篇-使用cc/</div>
+      <div>2026-05-31 排序算法三论：冒泡、选择与插入</div>
+      <div>http://example.com/2026/05/31/2026-05-31 排序算法三论：冒泡、选择与插入/</div>
     </div>
     <div class="license-meta">
       
@@ -423,7 +476,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年5月11日</div>
+          <div>2026年5月31日</div>
         </div>
       
       
@@ -455,18 +508,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/05/12/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E7%AC%AC%E4%BA%94%E7%AF%87-%E7%BF%98%E8%AF%BE%EF%BC%8C%E5%AD%A6%E4%B9%A0%E4%B8%8Ecc/" title="每晚总结第五篇-翘课，学习与cc">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">每晚总结第五篇-翘课，学习与cc</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2026/05/10/%E6%AF%8F%E6%99%9A%E6%80%BB%E7%BB%93%E5%85%B6%E4%B8%89%E2%80%94%E2%80%94%E5%91%A8%E6%9C%AB%E5%AD%A6%E4%B9%A0%E6%83%85%E5%86%B5/" title="每晚总结其三——周末学习情况">
-                        <span class="hidden-mobile">每晚总结其三——周末学习情况</span>
+                      <a href="/2026/05/31/2026-05-31%20%E9%80%92%E5%BD%92%E4%B8%89%E8%AE%BA%EF%BC%9A%E9%98%B6%E4%B9%98%E3%80%81%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E4%B8%8E%E7%9B%AE%E5%BD%95%E9%81%8D%E5%8E%86/" title="2026-05-31 递归三论：阶乘、斐波那契与目录遍历">
+                        <span class="hidden-mobile">2026-05-31 递归三论：阶乘、斐波那契与目录遍历</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
